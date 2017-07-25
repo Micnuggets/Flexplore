@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  price: 1.5
+  location: MyString
+  openingtime: 2017-07-24 23:11:24
+  closingtime: 2017-07-24 23:11:24
+
+two:
+  name: MyString
+  description: MyText
+  price: 1.5
+  location: MyString
+  openingtime: 2017-07-24 23:11:24
+  closingtime: 2017-07-24 23:11:24
