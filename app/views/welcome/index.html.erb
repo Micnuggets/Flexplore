@@ -6,9 +6,19 @@
 <br />
 
 <p>Find your new favourite place to study or work!</p>
-<form action="/search" method="GET">
+
+
+
+<!--<form action="/search" method="GET">
   <input type="text" name="name"/>
-</form>
+  <input type="submit" value="Submit">
+
+</form>-->
+
+<%= form_tag(locations_path, :method => "get", id: "search-form") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search name or city" %>
+    <%= submit_tag "Search", :name => nil %>
+<% end %>
 
 
 <!--<%= link_to 'Blog', controller: 'articles' %>-->
