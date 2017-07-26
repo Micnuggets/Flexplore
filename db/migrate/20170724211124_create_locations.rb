@@ -7,6 +7,7 @@ class CreateLocations < ActiveRecord::Migration[5.1]
       t.string :location
       t.time :openingtime
       t.time :closingtime
+      t.string :picture
 
       t.timestamps
     end

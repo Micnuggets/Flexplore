@@ -41,6 +41,11 @@
     <%= form.time_select :closingtime, id: :location_closingtime %>
   </div>
 
+  <div class="field">
+  <%= form.label :picture %>
+  <%= form.file_field :picture, id: :location_picture %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
