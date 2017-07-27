@@ -37,7 +37,8 @@
 
 <p>
   <strong>Picture:</strong>
-  <%= @location.picture %>
+  <%= image_tag @location.image.thumb.url %>
+  <!--<%= @location.picture %>-->
 </p>
 
 <%= link_to 'Edit', edit_location_path(@location) %> |
