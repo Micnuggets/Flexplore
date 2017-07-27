@@ -19,6 +19,7 @@ class LocationsController < ApplicationController
 
   # GET /locations/1/edit
   def edit
+      @location = Location.find(params[:id])
   end
 
   def search
@@ -45,7 +46,7 @@ class LocationsController < ApplicationController
   # PATCH/PUT /locations/1.json
   def update
     respond_to do |format|
-      if @location.edit(location_params)
+      if @location.update(location_params)
         format.html { redirect_to @location, notice: 'Location was successfully updated.' }
         format.json { render :show, status: :ok, location: @location }
       else
