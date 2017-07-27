@@ -22,7 +22,7 @@ class LocationsController < ApplicationController
   end
 
   def search
-    @locations = Location.where(name: params[:name])
+    @locations = Location.where(name: params[:name]) | Location.where(location: params[:name])
   end
 
   # POST /locations
@@ -45,7 +45,7 @@ class LocationsController < ApplicationController
   # PATCH/PUT /locations/1.json
   def update
     respond_to do |format|
-      if @location.update(location_params)
+      if @location.edit(location_params)
         format.html { redirect_to @location, notice: 'Location was successfully updated.' }
         format.json { render :show, status: :ok, location: @location }
       else
@@ -73,6 +73,6 @@ class LocationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def location_params
-      params.require(:location).permit(:name, :description, :price, :location, :openingtime, :closingtime, :picture)
+      params.require(:location).permit(:name, :description, :price, :pricemonth, :location, :openingtime, :closingtime, :picture)
     end
 end
