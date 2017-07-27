@@ -8,37 +8,37 @@
 <p>Find your new favourite place to study or work!</p>
 
 <form action="/search" method="GET">
-  <input type="text" name="name"/>
+  <input type="text" name="name" placeholder="Search name or city"/>
   <input type="submit" value="Search">
 
 </form>
 
-<%= form_tag(locations_path, :method => "get", id: "search-form") do %>
+<!--<%= form_tag(locations_path, :method => "get", id: "search-form") do %>
     <%= text_field_tag :search, params[:search], placeholder: "Search name or city" %>
     <%= submit_tag "Search", :name => nil %>
-<% end %>
+<% end %>-->
 
  <br />
 
 <form>
   <input type="radio" name="price" value="month" checked> Price per month<br>
 
- <input type="checkbox" name="vehicle2" value="Car"> 0 - 50 <br>
- <input type="checkbox" name="vehicle2" value="Car"> 50 - 100 <br>
- <input type="checkbox" name="vehicle2" value="Car"> 100 - 150 <br>
- <input type="checkbox" name="vehicle2" value="Car"> 150 - 200 <br>
- <input type="checkbox" name="vehicle2" value="Car"> 200 - 250 <br>
- <input type="checkbox" name="vehicle2" value="Car"> 250+ <br>
+ <input type="checkbox" name="price" value="one"> 0 - 50 <br>
+ <input type="checkbox" name="price" value="two"> 50 - 100 <br>
+ <input type="checkbox" name="price" value="three"> 100 - 150 <br>
+ <input type="checkbox" name="price" value="four"> 150 - 200 <br>
+ <input type="checkbox" name="price" value="five"> 200 - 250 <br>
+ <input type="checkbox" name="price" value="six"> 250+ <br>
 
  <br />
 
 <input type="radio" name="price" value="day"> Price per day:<br>
 
- <input type="checkbox" name="vehicle2" value="Car"> 0 - 10 <br>
- <input type="checkbox" name="vehicle2" value="Car"> 10 - 20 <br>
- <input type="checkbox" name="vehicle2" value="Car"> 20 - 30 <br>
- <input type="checkbox" name="vehicle2" value="Car"> 30 - 40 <br>
- <input type="checkbox" name="vehicle2" value="Car"> 40+ <br>
+ <input type="checkbox" name="price" value="first"> 0 - 10 <br>
+ <input type="checkbox" name="price" value="second"> 10 - 20 <br>
+ <input type="checkbox" name="price" value="third"> 20 - 30 <br>
+ <input type="checkbox" name="price" value="fourth"> 30 - 40 <br>
+ <input type="checkbox" name="price" value="fifth"> 40+ <br>
 
 </form>
 
@@ -47,20 +47,20 @@
 <form>
 <p>Facilities:</p>
 
- <input type="checkbox" name="vehicle1" value="Bike"> Free WiFi
- <input type="checkbox" name="vehicle2" value="Car"> Coffee
- <input type="checkbox" name="vehicle1" value="Bike"> Kitchen
- <input type="checkbox" name="vehicle1" value="Bike"> Printer
- <input type="checkbox" name="vehicle1" value="Bike"> Copy machine
+ <input type="checkbox" name="facilities" value="wifi"> Free WiFi
+ <input type="checkbox" name="facilities" value="cofee"> Coffee/tea
+ <input type="checkbox" name="facilities" value="kitchen"> Kitchen
+ <input type="checkbox" name="facilities" value="printer"> Printer
+ <input type="checkbox" name="facilities" value="copy"> Copy machine
  </form>
 
  <br />
 
  <form>
  <p>Extra:</p>
- <input type="checkbox" name="vehicle2" value="Car"> Open after 18:00
- <input type="checkbox" name="vehicle2" value="Car"> Open on Saturday
- <input type="checkbox" name="vehicle2" value="Car"> Open on Sunday
+ <input type="checkbox" name="extra" value="evening"> Open after 18:00
+ <input type="checkbox" name="extra" value="saturday"> Open on Saturday
+ <input type="checkbox" name="extra" value="sunday"> Open on Sunday
 
  <br />
  </form>

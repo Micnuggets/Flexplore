@@ -22,8 +22,13 @@
   </div>
 
   <div class="field">
-    <%= form.label :price %>
+    <%= form.label :price, "Price per day in €" %>
     <%= form.text_field :price, id: :location_price %>
+  </div>
+
+  <div class="field">
+  <%= form.label :pricemonth, "Price per month in €" %>
+  <%= form.text_field :pricemonth, id: :location_pricemonth %>
   </div>
 
   <div class="field">
@@ -32,12 +37,12 @@
   </div>
 
   <div class="field">
-    <%= form.label :openingtime %>
+    <%= form.label :openingtime, "Open" %>
     <%= form.time_select :openingtime, id: :location_openingtime %>
   </div>
 
   <div class="field">
-    <%= form.label :closingtime %>
+    <%= form.label :closingtime, "Close" %>
     <%= form.time_select :closingtime, id: :location_closingtime %>
   </div>
 

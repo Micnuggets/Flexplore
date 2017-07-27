@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170727134644) do
+ActiveRecord::Schema.define(version: 20170726102417) do
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
@@ -30,7 +30,6 @@ ActiveRecord::Schema.define(version: 20170727134644) do
     t.datetime "updated_at", null: false
     t.string "picture"
     t.float "pricemonth"
-    t.string "image"
   end
 
 end
