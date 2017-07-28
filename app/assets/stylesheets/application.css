@@ -21,7 +21,7 @@
 
  /*.bg {
      /* The image used */
-     /*background: url("http://www.singaporecarpet.com/images/7-reasons-why-carpet-is-a-popular-choice-for-office.jpg")*/;
+     /*background: url("http://www.singaporecarpet.com/images/7-reasons-why-carpet-is-a-popular-choice-for-office.jpg");*/
 
      /* Full height */
      height: 100%;
@@ -31,9 +31,48 @@
      background-repeat: no-repeat;
      background-size: cover;
  }
- 
- /*
-.head {
-  background-color: white;
 
-}*/
+
+.head {
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 80px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+}
+
+p {
+  font-size: 15px;
+  text-align: left;
+}
+
+p1 {
+  font-size: 15px;
+
+}
+
+.subhoofd {
+
+}
+.site-search {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.site-options {
+  display: inline-flex;
+  justify-content: flex-start;
+  float: inherit;
+  text-align: left;
+}
+
+.container-options {
+  text-align: center;
+}
