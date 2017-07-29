@@ -32,6 +32,25 @@
      background-size: cover;
  }
 
+//ZENY EN TIMON BACKGROUND IMAGE
+.site-home {
+  position: relative;
+}
+
+//TIMON BACKGROUND IMAGE:
+.site-home::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background: image-url("landingpage.jpg");
+  opacity: 0.5;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .head {
   text-align: center;
@@ -75,4 +94,6 @@ p1 {
 
 .container-options {
   text-align: center;
+  background-color: rgba(217, 217, 217, 0.4);
+  padding: 15px;
 }

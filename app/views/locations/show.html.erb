@@ -27,18 +27,21 @@
 
 <p>
   <strong>Open:</strong>
-  <%= @location.openingtime %>
+  <%= @location.openingtime.to_s (:time) %>
 </p>
 
 <p>
   <strong>Close:</strong>
-  <%= @location.closingtime %>
+  <%= @location.closingtime.to_s (:time) %>
 </p>
 
 <p>
   <strong>Picture:</strong>
-  <%= image_tag @location.image.thumb.url %>
   <!--<%= @location.picture %>-->
+  <br />
+  <br />
+  <%= image_tag(@location.picture, height: 250) if @location.picture.present? %>
+  <!--<img src="/images/42-workspace-bureau.jpg" height="200px">-->
 </p>
 
 <%= link_to 'Edit', edit_location_path(@location) %> |

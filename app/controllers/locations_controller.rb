@@ -23,7 +23,10 @@ class LocationsController < ApplicationController
   end
 
   def search
-    @locations = Location.where(name: params[:name]) | Location.where(location: params[:name])
+      @locations = Location.where('name LIKE ?', "%#{params[:searchitem]}%") | Location.where('location LIKE ?', "%#{params[:searchitem]}%") #| Location.where('description like ?', "%#{params[:name]}%")
+    #@locations = Location.where(name: params[:name]) | Location.where(location: params[:name]) | Location.where(description: params[:name])
+    #@locations = Location.where('name OR location OR description LIKE ?', "%#{params[:name]}%")
+
   end
 
   # POST /locations
