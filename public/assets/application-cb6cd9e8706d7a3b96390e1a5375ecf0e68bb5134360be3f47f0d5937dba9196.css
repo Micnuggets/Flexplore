@@ -1,0 +1,267 @@
+/* line 1, C:/Sites/DOCP/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, C:/Sites/DOCP/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, C:/Sites/DOCP/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, C:/Sites/DOCP/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, C:/Sites/DOCP/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, C:/Sites/DOCP/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 36, C:/Sites/DOCP/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 40, C:/Sites/DOCP/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 45, C:/Sites/DOCP/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 50, C:/Sites/DOCP/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 54, C:/Sites/DOCP/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 60, C:/Sites/DOCP/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 67, C:/Sites/DOCP/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 77, C:/Sites/DOCP/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 83, C:/Sites/DOCP/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* line 18, C:/Sites/DOCP/app/assets/stylesheets/application.css.scss */
+body, html {
+  height: 100%;
+  margin: 0;
+  /*.bg {
+      /* The image used */
+  /*background: url("http://www.singaporecarpet.com/images/7-reasons-why-carpet-is-a-popular-choice-for-office.jpg");*/
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 36, C:/Sites/DOCP/app/assets/stylesheets/application.css.scss */
+.style_logo {
+  position: relative;
+  float: left;
+  width: 200px;
+  margin-top: -14px;
+  /*margin-left: -50px;*/
+  margin-bottom: -16px;
+  /*margin-right: -10px;*/
+}
+
+/* line 46, C:/Sites/DOCP/app/assets/stylesheets/application.css.scss */
+.nav a {
+  color: black;
+}
+
+/* line 50, C:/Sites/DOCP/app/assets/stylesheets/application.css.scss */
+.navbar {
+  background-color: #ffffff;
+}
+
+/*.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #4CAF50;
+    color: #4CAF50;
+  }
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  } */
+/* line 66, C:/Sites/DOCP/app/assets/stylesheets/application.css.scss */
+a:hover {
+  background-color: #003399;
+  color: red;
+}
+
+/* a.active {
+  background-color: #4CAF50
+} */
+/* line 76, C:/Sites/DOCP/app/assets/stylesheets/application.css.scss */
+.site-home {
+  position: relative;
+}
+
+/* line 81, C:/Sites/DOCP/app/assets/stylesheets/application.css.scss */
+.site-home::after {
+  z-index: -1;
+  content: "";
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background: url(/assets/landingpage-2606b7a0fd31f8a9b81bad0ec848699ac3ff4b637044eba00d2ced9018d33603.jpg);
+  opacity: 0.5;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+/* line 96, C:/Sites/DOCP/app/assets/stylesheets/application.css.scss */
+.head {
+  text-align: center;
+}
+
+/* line 101, C:/Sites/DOCP/app/assets/stylesheets/application.css.scss */
+h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* line 107, C:/Sites/DOCP/app/assets/stylesheets/application.css.scss */
+h2 {
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* line 113, C:/Sites/DOCP/app/assets/stylesheets/application.css.scss */
+p {
+  font-size: 15px;
+  text-align: left;
+}
+
+/* line 118, C:/Sites/DOCP/app/assets/stylesheets/application.css.scss */
+p1 {
+  font-size: 13px;
+  text-align: center;
+}
+
+/* line 127, C:/Sites/DOCP/app/assets/stylesheets/application.css.scss */
+.site-search {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* line 132, C:/Sites/DOCP/app/assets/stylesheets/application.css.scss */
+.site-options {
+  display: inline-flex;
+  justify-content: flex-start;
+  float: inherit;
+  text-align: left;
+}
+
+/* line 139, C:/Sites/DOCP/app/assets/stylesheets/application.css.scss */
+.margin-home {
+  margin-top: 150px;
+}
+
+/* line 143, C:/Sites/DOCP/app/assets/stylesheets/application.css.scss */
+.margin {
+  margin-top: 100px;
+}
+
+/* line 147, C:/Sites/DOCP/app/assets/stylesheets/application.css.scss */
+.margin2 {
+  margin-top: 50px;
+}
+
+/* line 151, C:/Sites/DOCP/app/assets/stylesheets/application.css.scss */
+.container-options {
+  text-align: center;
+  background-color: rgba(217, 217, 217, 0.4);
+  padding: 15px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/* De footer afkomstig van https://stackoverflow.com/questions/18915550/fix-footer-to-bottom-of-page */
+/* line 161, C:/Sites/DOCP/app/assets/stylesheets/application.css.scss */
+#footer {
+  position: relative;
+  height: 50px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: -50px;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  font-weight: bold;
+}
