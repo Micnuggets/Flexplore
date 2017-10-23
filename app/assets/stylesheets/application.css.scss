@@ -32,16 +32,55 @@
      background-size: cover;
  }
 
-//ZENY EN TIMON BACKGROUND IMAGE
+.style_logo {
+  position: relative;
+  float: left;
+  width: 200px;
+  margin-top: -14px;
+  /*margin-left: -50px;*/
+  margin-bottom: -16px;
+  /*margin-right: -10px;*/
+}
+
+.nav a {
+  color: black;
+}
+
+.navbar {
+  background-color: #ffffff;
+}
+
+/*.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #4CAF50;
+    color: #4CAF50;
+  }
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  } */
+
+a:hover {
+  background-color: #003399;
+  color: red;
+}
+
+/* a.active {
+  background-color: #4CAF50
+} */
+
+//Z EN T BACKGROUND IMAGE
 .site-home {
   position: relative;
 }
 
-//TIMON BACKGROUND IMAGE:
+//T BACKGROUND IMAGE:
 .site-home::after {
   z-index: -1;
   content: "";
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 100%;
   top: 0;
@@ -50,6 +89,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: scroll;
 }
 
 .head {
@@ -58,13 +98,15 @@
 
 
 h1 {
-  font-size: 80px;
+  font-size: 40px;
   text-align: center;
+  font-weight: bold;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 15px;
   text-align: center;
+  font-weight: bold;
 }
 
 p {
@@ -73,7 +115,8 @@ p {
 }
 
 p1 {
-  font-size: 15px;
+  font-size: 13px;
+  text-align: center;
 
 }
 
@@ -92,8 +135,36 @@ p1 {
   text-align: left;
 }
 
+.margin-home {
+  margin-top: 150px;
+}
+
+.margin {
+  margin-top: 100px;
+}
+
+.margin2 {
+  margin-top: 50px;
+}
+
 .container-options {
   text-align: center;
   background-color: rgba(217, 217, 217, 0.4);
   padding: 15px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/* De footer afkomstig van https://stackoverflow.com/questions/18915550/fix-footer-to-bottom-of-page */
+
+#footer{
+  position: relative;
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: -50px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    font-weight: bold;
 }

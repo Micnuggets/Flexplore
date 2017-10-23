@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
+<div class="margin"></div>
+
 <h1>Locations</h1>
+
+<div class="margin2"></div>
 
 <table>
   <thead>
@@ -27,7 +31,8 @@
         <td><%= location.location %></td>
         <td><%= location.openingtime.to_s (:time) %></td>
         <td><%= location.closingtime.to_s (:time) %></td>
-        <%= image_tag(@location.picture, height: 50) if @location.picture.present? %>
+        <!--Door de volgende syntax krijg ik een "ActionView::Template::Error (undefined method `picture' for nil:NilClass" error. De syntax moet overigens wel worden afgesloten met %>. Daar kon ik geen comment van maken.)-->
+        <%-#<%= image_tag(@location.picture, height: 50) if @location.picture.present? %>
         <td><%= link_to 'Show', location %></td>
         <td><%= link_to 'Edit', edit_location_path(location) %></td>
         <td><%= link_to 'Destroy', location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
