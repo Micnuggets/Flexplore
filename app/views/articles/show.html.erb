@@ -1,3 +1,10 @@
+
+<div class="margin"></div>
+
+<h1>Blog article</h1>
+
+<div class="margin2"></div>
+
 <p>
   <strong>Title:</strong>
   <%= @article.title %>
@@ -7,6 +14,8 @@
   <strong>Text:</strong>
   <%= @article.text %>
 </p>
+
+<div class="margin2"></div>
 
 <%= link_to 'Edit', edit_article_path(@article) %>
 <%= link_to 'Back', articles_path %>
